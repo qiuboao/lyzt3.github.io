@@ -114,18 +114,18 @@ async function chooseOption6() {
     }
     
     // 玩家选项7的回调函数
-    async function chooseOption9() {
+   async function chooseOption9() {
         await displayUserMessage("你会羡慕吗？");
         await displayOtherMessage("小时候会，现在不会了");
 
         await displayOptions(["N……","没关系！！你现在有我陪你！"], ["chooseOption10","chooseOption11"]);
+    }
 
         async function chooseOption10() {
             await displayUserMessage("N……");}
     
         // 跳转到结束对话
         endConversation();
-    }
 
     async function chooseOption11() {
         await displayUserMessage("没关系！！你现在有我陪你！");
