@@ -45,16 +45,12 @@ function setBubbleWidth(element) {
 
 // 对话函数
 async function conversation() {
-
     displayOptions(["王晓雨看起来和李泽关系很好啊","李泽和王晓雨是情侣吗？"], ["chooseOption1","chooseOption2"]);
-
-
 }
 
 async function chooseOption1() {
     await displayUserMessage("王晓雨看起来和李泽关系很好啊");
     await displayOtherMessage("不像情侣，像好朋友");
-
 
     await displayOptions(["咦？你看得出情侣吗？"], [ "chooseOption3"]);
 }
@@ -62,11 +58,9 @@ async function chooseOption1() {
 async function chooseOption2() {
     await displayUserMessage("李泽和王晓雨是情侣吗？");
     await displayOtherMessage("不像情侣，像好朋友");
-
-
+    
     await displayOptions(["咦？你看得出情侣吗？"], [ "chooseOption3"]);
 }
-
 
 async function chooseOption3() {
     await displayUserMessage("咦？你看得出情侣吗？");
@@ -75,13 +69,11 @@ async function chooseOption3() {
     await displayOptions(["好你个小绿领！！！"], ["chooseOption4"]);
 }
 
-
 async function chooseOption4() {
     await displayUserMessage("好你个小绿领！！！");
     await displayOtherMessage("搞不懂你……");
     await displayOptions(["那她漂亮吗？","你觉得王晓雨是个什么样的人？"], ["chooseOption5","chooseOption6"]);
 }
-
 
 async function chooseOption5() {
     await displayUserMessage("那她漂亮吗？");
@@ -104,12 +96,10 @@ async function chooseOption6() {
         await displayOptions(["感觉是被很多爱包围着长大呢……"], ["chooseOption8"]);
     }
     
-    // 玩家选项6的回调函数
     async function chooseOption8() {
         await displayUserMessage("感觉是被很多爱包围着长大呢……");
         await displayOtherMessage("或许吧");
     
-        // 显示玩家的选项7
         await displayOptions(["你会羡慕吗？"], ["chooseOption9"]);
     }
     
@@ -125,6 +115,7 @@ async function chooseOption6() {
     
         // 跳转到结束对话
         endConversation();}
+
     async function chooseOption11() {
         await displayUserMessage("没关系！！你现在有我陪你！");
 
