@@ -80,7 +80,9 @@ async function chooseOption4() {
 async function chooseOption5() {
     await displayUserMessage("我也就是随口一问……对了，李泽是做什么工作，感觉还挺有钱的，能一口气买下这个瓶子");
     await displayOtherMessage("老秦给我的资料上提到，李泽早期就是个卖义乌小商品的网店卖家，后来突然开始倒腾古董");
-    await displayOtherMessage("要承认的一点是，他确实运气不错");}
+    await displayOtherMessage("要承认的一点是，他确实运气不错");
+
+    await displayOptions(["只是运气不错而已吗……"], ["chooseOption6"]);}
 
 async function chooseOption3() {
         await displayUserMessage("他是靠什么赚钱的？");
