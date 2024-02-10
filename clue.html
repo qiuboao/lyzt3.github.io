@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>线索</title>
+    <style>
+         /* 整体页面样式 */
+         .data {
+            width: 366px;
+            height: 700px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow-y: auto;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            background-image: url('my image/线索页背景.jpg');
+            background-size: cover;
+        }
+        
+        .topDiv {
+            height: 55px;
+            color: white;
+            background-color: #201e1f; 
+            text-align: center;
+            font-size: large;
+            line-height: 60px;
+        }
+
+        button {
+            padding: 12px 16px;
+            background-color: #201e1f;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 5px;
+            position:relative;
+            left: 20px;
+            top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="data">
+         <!-- Top -->
+         <div class="topDiv">线索</div>
+         <div>
+            <button id="lwhp">龙纹花瓶</button>
+            <button id="lz">李泽 </button>
+            <button id="wxy">王晓雨 </button>
+            <button id="wm">王明 </button>
+        <div>
+            <button id="xyj">小圆镜</button>
+            <button id="lxsl">龙消失了</button>
+            <button id="tpdnt">逃跑的念头</button>
+        </div>
+    </div>
+
+    <script>
+        var button = document.getElementById("lwhp");
+        button.addEventListener("click", 
+        function() {window.location.href = 'dragon vase.html';});
+
+        var button = document.getElementById("lz");
+        button.addEventListener("click", 
+        function() {window.location.href = 'LiZe.html';});
+
+        var button = document.getElementById("wxy");
+        button.addEventListener("click", 
+        function() {window.location.href = 'WangXiaoYu.html';});
+
+        var button = document.getElementById("wm");
+        button.addEventListener("click", 
+        function() {window.location.href = 'WangMing.html';});
+
+        var button = document.getElementById("xyj");
+        button.addEventListener("click", 
+        function() {window.location.href = 'small round mirror.html';});
+
+        var button = document.getElementById("lxsl");
+        button.addEventListener("click", 
+        function() {window.location.href = 'dragon disappear.html';});
+
+        var button = document.getElementById("tpdnt");
+        button.addEventListener("click", 
+        function() {window.location.href = 'run away.html';});
+
+
+    </script>
+</body>
+</html>
