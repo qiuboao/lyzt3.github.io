@@ -16,9 +16,18 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+#name {
+    height: 55px;
+    color: white;
+    background-color: #201e1f; 
+    text-align: center;
+    font-size: large;
+    line-height: 60px;
+}
+
 #chat-box {
     padding: 30px;
-    height: 520px;
+    height: 475px;
     overflow-y: auto;
     display: flex;
     flex-direction: column; /* 确保消息按列排列 */
